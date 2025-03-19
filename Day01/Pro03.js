@@ -65,4 +65,14 @@ function Print()
     console.log("Hey Coder")
 }
 
+const msg=() =>{return console.log("Hello Mr.Coder")}
+//console.log(msg())
+msg()
+
+const add=(a,b) => {return a+b}
+console.log(add(10,21))
+
+const mult=(a,b=2)=>{return a*b}
+console.log(mult(6,8))
+console.log(mult(7))
 
