@@ -37,3 +37,26 @@ function prime(n)
         }
     }
 }
+console.log(prime(12))
+
+//write a recursive function to print numbers from 1 to n
+function recursive(n)
+{
+    let a=0
+    let b=1
+    if(n==0)
+    {
+        return 0
+    }
+    else if(n==1)
+    {
+        return 1
+    }
+    else
+    {
+        return(n-1) + (n-2)
+    }
+}
+console.log(recursive(6))
+
+
