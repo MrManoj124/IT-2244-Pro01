@@ -59,4 +59,10 @@ function recursive(n)
 }
 console.log(recursive(6))
 
+//arrow function
+function Print()
+{
+    console.log("Hey Coder")
+}
+
 
