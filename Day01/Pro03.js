@@ -76,3 +76,16 @@ const mult=(a,b=2)=>{return a*b}
 console.log(mult(6,8))
 console.log(mult(7))
 
+//rest parameter 
+/*const mysum=(...n)=>
+{
+    let t=0
+    n.foreach(i)=>t = (t+i)
+    console.log(t)
+}
+    */
+(
+const mysum=(...n)=>{
+    return n.reduce((t,i)=>t=t+i)
+}
+console.log(mysum(5,8,12,20,30,23))
