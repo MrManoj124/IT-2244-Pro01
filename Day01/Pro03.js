@@ -83,9 +83,29 @@ console.log(mult(7))
     n.foreach(i)=>t = (t+i)
     console.log(t)
 }
-    */
+    
 (
 const mysum=(...n)=>{
     return n.reduce((t,i)=>t=t+i)
 }
 console.log(mysum(5,8,12,20,30,23))
+*/
+
+//calback Function
+const myName=(name)=>{console.log("My Name is "+ name)}
+
+const greet=(msg,fun)=>
+{
+    console.log("Hii"+msg)
+    fun
+}
+
+greet("Good Morning ",myName("Manoj"))
+const multi=(n)=>n*1
+
+const myarr=(mult,...n)=>
+{
+    n.forEach((i)=>console.log(mult(i)))
+}
+
+myarr(multi,45,12,32,20,45,62,12)
